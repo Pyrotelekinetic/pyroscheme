@@ -1,0 +1,49 @@
+/*
+ *  PyroScheme - My custom 16 color palette for everything
+ *  Copyright (C) 2022  Carter "pyrotelekinetic" Ison <carter@isons.org>
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+
+@charset "UTF-8";
+
+:root {
+	--background: #1c1c1c;
+	--foreground: #afafaf;
+
+	--black: #1c1c1c;
+	--blackBright: #515151;
+
+	--red: #af004f;
+	--redBright: #b03f72;
+
+	--green: #1d5e44;
+	--greenBright: #527c6b;
+
+	--yellow: #af871c;
+	--yellowBright: #ae9b68;
+
+	--blue: #1c5f87;
+	--blueBright: #517c96;
+
+	--magenta: #5f1c5f;
+	--magentaBright: #7c517c;
+
+	--cyan: #307c77;
+	--cyanBright: #628784;
+
+	--white: #afafaf;
+	--whiteBright: #dcdcdc;
+}
