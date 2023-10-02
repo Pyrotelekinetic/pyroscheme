@@ -1,3 +1,4 @@
+colors: with colors; ''
 /*
  *  PyroScheme - My custom 16 color palette for everything
  *  Copyright (C) 2022  Carter "pyrotelekinetic" Ison <carter@isons.org>
@@ -20,30 +21,31 @@
 @charset "UTF-8";
 
 :root {
-	--background: #1c1c1c;
-	--foreground: #afafaf;
+	--background: ${black};
+	--foreground: ${white};
 
-	--black: #1c1c1c;
-	--blackBright: #515151;
+	--black: ${black};
+	--blackBright: ${blackBright};
 
-	--red: #af004f;
-	--redBright: #b03f72;
+	--red: ${red};
+	--redBright: ${redBright};
 
-	--green: #1d5e44;
-	--greenBright: #527c6b;
+	--green: ${green};
+	--greenBright: ${greenBright};
 
-	--yellow: #af871c;
-	--yellowBright: #ae9b68;
+	--yellow: ${yellow};
+	--yellowBright: ${yellowBright};
 
-	--blue: #1c5f87;
-	--blueBright: #517c96;
+	--blue: ${blue};
+	--blueBright: ${blueBright};
 
-	--magenta: #5f1c5f;
-	--magentaBright: #7c517c;
+	--magenta: ${magenta};
+	--magentaBright: ${magentaBright};
 
-	--cyan: #307c77;
-	--cyanBright: #628784;
+	--cyan: ${cyan};
+	--cyanBright: ${cyanBright};
 
-	--white: #afafaf;
-	--whiteBright: #dcdcdc;
+	--white: ${white};
+	--whiteBright: ${whiteBright};
 }
+''
