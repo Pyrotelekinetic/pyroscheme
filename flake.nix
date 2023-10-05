@@ -5,7 +5,9 @@ description = "A Nix Flake for my custom 16 color palette.";
 inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
 outputs = { self, nixpkgs }: let
-  pkgs = nixpkgs.legacyPackages.x86_64-linux;
+  supportedSystems = [ "x86_64-linux" "aarch64-linux" ];
+  allSystems = output: nixpkgs.lib.genAttrs supportedSystems
+    (system: output nixpkgs.legacyPackages.${system});
 in {
   lib.colors = {
     black = "#1c1c1c";
@@ -25,9 +27,9 @@ in {
     white = "#afafaf";
     whiteBright = "#dcdcdc";
   };
-  packages.x86_64-linux = {
+  packages = allSystems (pkgs: {
     css = pkgs.writeText "colors.css" (import ./formats/css.nix self.lib.colors);
-  };
+  });
 };
 
 }
