@@ -6,7 +6,6 @@ inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
 outputs = { self, nixpkgs }: let
   pkgs = nixpkgs.legacyPackages.x86_64-linux;
-  lib = nixpkgs.lib;
 in {
   lib.colors = {
     black = "#1c1c1c";
