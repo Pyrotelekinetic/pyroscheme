@@ -25,7 +25,7 @@ in {
     white = "#afafaf";
     whiteBright = "#dcdcdc";
   };
-  formats = {
+  packages.x86_64-linux = {
     css = pkgs.writeText "colors.css" (import ./formats/css.nix self.lib.colors);
   };
 };
