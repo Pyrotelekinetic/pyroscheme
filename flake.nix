@@ -2,7 +2,7 @@
 
 description = "A Nix Flake for my custom 16 color palette.";
 
-inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+inputs.nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
 
 outputs = { self, nixpkgs }: let
   supportedSystems = [ "x86_64-linux" "aarch64-linux" ];
