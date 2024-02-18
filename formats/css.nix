@@ -18,8 +18,6 @@ colors: with colors; ''
  */
 
 
-@charset "UTF-8";
-
 :root {
 	--background: ${black};
 	--foreground: ${white};
